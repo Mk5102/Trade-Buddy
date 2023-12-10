@@ -1,0 +1,152 @@
+
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #f1f1f1;
+}
+
+.inner-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.team {
+    text-align: center;
+    background-color: #000000;
+  }
+  .team h1 {
+    font-size: 32px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: "Roboto";
+  }
+  .team .underline {
+    position: relative;
+  }
+  .team .underline::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 3px;
+    background-color: #ffffff;
+    position: relative;
+    margin-left: 44%;
+  }
+  @media (max-width: 1024px) {
+    .team .underline::after {
+      width: 165px;
+      margin-left: 42%;
+    }
+  }
+  @media (max-width: 768px) {
+    .team .underline::after {
+      width: 165px;
+      margin-left: 40%;
+    }
+  }
+  @media (max-width: 427px) {
+    .team .underline::after {
+      width: 168px;
+      margin-left: 30%;
+    }
+  }
+  @media (max-width: 376px) {
+    .team .underline::after {
+      width: 160px;
+      margin-left: 29%;
+    }
+  }
+  @media (max-width: 320px) {
+    .team .underline::after {
+      width: 160px;
+      margin-left: 25%;
+    }
+  }
+  .team p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Roboto";
+  }
+  .team .img img {
+    width: 100%;
+  }
+  .team .img1 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    border-radius: 70%;
+    width: 26%;
+    height: 80px;
+    margin-top: -36px;
+    border: 5px solid #ffffff;
+  }
+  @media (max-width: 768px) {
+    .team .img1 img {
+      height: 57px;
+      margin-top: -28px;
+    }
+  }
+  @media (max-width: 427px) {
+    .team .img1 img {
+      width: 18%;
+    }
+  }
+  @media (max-width: 320px) {
+    .team .img1 img {
+      width: 22%;
+    }
+  }
+  .team .row {
+    --bs-gutter-x: 0rem;
+  }
+  .team .card .card-body h3 {
+    font-size: 24px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  .team .card .card-body h6 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  .team .card .card-body .btn {
+    border: 3px solid black;
+    border-radius: 0;
+    width: 50%;
+    --bs-btn-hover-bg: #000000;
+    --bs-btn-hover-color: #fff;
+  }

@@ -1,0 +1,90 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.form-control {
+    width: 250px;
+}
+
+/* Search bar styles */
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+/* Login and Sell button styles */
+.login, .selling_page {
+    display: flex;
+    align-items: center;
+}
+
+#log, .selling_page button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#log:hover, .selling_page button:hover {
+    background-color: #0056b3;
+}
+
+/* Content container styles */
+.container-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .login, .selling_page {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #log, .selling_page button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
